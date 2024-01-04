@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  gap: 1000px;
+  display: flex;
+  flex-direction: column;
+}
