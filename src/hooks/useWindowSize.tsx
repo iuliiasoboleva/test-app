@@ -14,13 +14,10 @@ export function useWindowSize() {
       });
     };
 
-    // Initial check on component mount
     handleResize();
 
-    // Listen for window resize events
     window.addEventListener('resize', handleResize);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };

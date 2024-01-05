@@ -3,10 +3,20 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   color: white;
+  min-height: 200vh; 
 }
 
 .main {
-  gap: 1000px;
+  gap: 300px;
   display: flex;
   flex-direction: column;
+}
+
+.bottom-banner-container {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.bottom-banner-container.show {
+  opacity: 1;
 }
